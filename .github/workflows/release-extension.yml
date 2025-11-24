@@ -72,6 +72,6 @@ jobs:
           push-to: material-extensions/zed-extensions
           create-pullrequest: true
           commit-message: "Update Material Icon Theme to v${{ steps.get_version.outputs.VERSION }}"
-          tag-name: v${{ steps.get_version.outputs.VERSION }}
+          tag: v${{ steps.get_version.outputs.VERSION }}
         env:
           COMMITTER_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
